@@ -743,6 +743,10 @@ Home Section
 	        background-size: cover;
 }
 
+.hs-caption {
+	padding-bottom: 40px;
+}
+
 .hs-title-size-1 {
 	letter-spacing: 4px;
 	font-size: 15px;
