@@ -1,13 +1,14 @@
 <?php
 
 	// Mail settings
-	$to = "web-master72@yandex.ru";
-	$subject = "Leaff contact form";
+	$to = "pawsnhandpetcare@yahoo.com";
+	$subject = "Paws 'n Hand contact form";
 
 	if (isset($_POST["name"]) && isset($_POST["email"]) && isset($_POST["message"])) {
 
 		$content  = "Name: "     . $_POST["name"]    . "\r\n";
 		$content .= "Email: "    . $_POST["email"]   . "\r\n";
+		$content .= "Phone: "    . $_POST["phone"]   . "\r\n";
 		$content .= "Message: "  . "\r\n" . $_POST["message"];
 
 		if (mail($to, $subject, $content, $_POST["email"])) {
